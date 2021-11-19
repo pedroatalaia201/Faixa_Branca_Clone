@@ -49,3 +49,19 @@
         * Responsabilidade social<br>
     </p>
 </div>
+
+<div class = "ClientStartCompany">
+    <div class = "ClientList">
+        <ul class = "Clients">
+            <% @client.each do |item|  %>
+                <li>
+                    <div class = "ClientImgMod">
+                        <div class = "ClientImg">
+                            <%= image_tag(item.image_url)%>
+                        </div>
+                    </div>
+                </li>
+            <% end %>
+        </ul>
+    </div>
+</div>

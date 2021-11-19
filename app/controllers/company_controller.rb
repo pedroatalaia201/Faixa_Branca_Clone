@@ -1,5 +1,5 @@
 class CompanyController < ApplicationController
   def index
-    @company
+    @client = Client.all
   end
 end

@@ -27,12 +27,21 @@
 }
 .Header{
    background-color: black;
+    height: 580px;
 }
 .ImageHead{
     position: relative;
     right: 200px;
     width: 1800px;
     height: 580px;
+}
+.LinkLogoHead{
+    position: relative;
+    bottom: 400px;
+    right: 100px;
+}
+.LinkLogoHead img{
+    width: 500px;
 }
 .Logo{
     background-color: #161616;
