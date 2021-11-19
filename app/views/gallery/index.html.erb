@@ -1,0 +1,17 @@
+<h3 class = "GalleryTitle">GALERIA</h3>
+
+<div class = "ClientStart">
+    <div class = "ClientList">
+        <ul class = "Clients">
+            <% @client.each do |item|  %>
+                <li>
+                    <div class = "ClientImgMod">
+                        <div class = "ClientImg">
+                            <%= image_tag(item.image_url)%>
+                        </div>
+                    </div>
+                </li>
+            <% end %>
+        </ul>
+    </div>
+</div>

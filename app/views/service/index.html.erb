@@ -1,0 +1,43 @@
+<div>
+    <h3 class = "ServiceTitle">SERVIÇOS</h3>
+</div>
+<div>
+    <h5 class = "ServiceSubTitle">CONHEÇA ALGUNS DE NOSSOS SERVIÇOS</h5>
+</div>
+
+<div class = "ServiceList">
+    <ul class = "Services">
+        <% @service.each do |item|  %>
+            <li>
+                <div class = "ServiceImgMod">
+                    <div class = "ServiceImg">
+                        <%= image_tag(item.image_url)%>
+                    </div>
+                </div>
+                    
+                <div class = "ServiceTitle">
+                    <%= item.title %>   
+                </div>
+                <div class = "ServiceRes">
+                    <%= item.resume %>
+                </div>
+            </li>
+        <% end %>
+    </ul>
+</div>
+<%# Need to find a way of make a partial to refactor this...%>
+<div class = "ClientStartService">
+    <div class = "ClientList">
+        <ul class = "Clients">
+            <% @client.each do |item|  %>
+                <li>
+                    <div class = "ClientImgMod">
+                        <div class = "ClientImg">
+                            <%= image_tag(item.image_url)%>
+                        </div>
+                    </div>
+                </li>
+            <% end %>
+        </ul>
+    </div>
+</div>

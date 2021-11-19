@@ -1,0 +1,22 @@
+<div>
+    <h3 class = "ClientsTitle">CLIENTES</h3>
+</div>
+<div>
+    <h5 class = "ClientsSubTitle">CONHEÇA ALGUNS DE NOSSOS CLIENTES</h5>
+</div>
+
+<div class = "ClientStartClient">
+    <div class = "ClientList">
+        <ul class = "Clients">
+            <% @client.each do |item|  %>
+                <li>
+                    <div class = "ClientImgMod">
+                        <div class = "ClientImg">
+                            <%= image_tag(item.image_url)%>
+                        </div>
+                    </div>
+                </li>
+            <% end %>
+        </ul>
+    </div>
+</div>

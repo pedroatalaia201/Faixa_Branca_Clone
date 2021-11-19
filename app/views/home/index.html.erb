@@ -1,0 +1,62 @@
+<div class = "Company">
+    <h3>EMPRESA</h3>
+</div>
+
+<div class = "CompanyDescription">
+    <p>
+        Desenvolvemos um trabalho de acordo com o planejamento que cada cliente necessita,<br> 
+        priorisando a satisfação total do mesmo. Para que isso ocorra, trabalhamos com profissionais<br> 
+        qualificados, com cursos e especializações para cada tipo de serviço e maquinário utilizado.
+    </p>
+</div>
+
+<div class = "BottomCompany">
+    <a class = "LinkToCompany"><%= link_to 'EMPRESA', company_index_path(@company) %></a>
+</div>
+<div class = "ServiceStartPart">
+    <div class = "Service">
+        <h3>SERVIÇOS</h3>
+    </div>
+
+    <div class = "ServiceList">
+        <ul class = "Services">
+            <% @service.each do |item|  %>
+                <li>
+                    <div class = "ServiceImgMod">
+                        <div class = "ServiceImg">
+                            <%= image_tag(item.image_url)%>
+                        </div>
+                    </div>
+                    
+                    <div class = "ServiceTitle">
+                        <%= item.title %>   
+                    </div>
+                    <div class = "ServiceRes">
+                        <%= item.resume %>
+                    </div>
+                </li>
+            <% end %>
+        </ul>
+    </div>
+
+    <div class ="BottomService">
+        <a><%= link_to 'VEJA MAIS SERVIÇOS', service_index_path(@service)%></a>
+    </div>
+</div>
+<div class = "ClientStart">
+    <div class = "ClientList">
+        <ul class = "Clients">
+            <% @client.each do |item|  %>
+                <li>
+                    <div class = "ClientImgMod">
+                        <div class = "ClientImg">
+                            <%= image_tag(item.image_url)%>
+                        </div>
+                    </div>
+                </li>
+            <% end %>
+        </ul>
+    </div>
+</div>
+
+

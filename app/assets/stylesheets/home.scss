@@ -1,0 +1,166 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.Company{
+    margin: 20px;
+    margin-bottom: 30px;
+}
+.CompanyDescription{
+    margin: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+a{
+    align-self: center;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 500;
+    color: white;
+}
+.BottomCompany{
+    margin: 17px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    position: relative;
+    left: 565px;
+    text-align: center;
+    background-color: rgb(223, 114, 24);
+    height: 40px;
+    width: 150px;
+}
+.BottomCompany:hover{
+    background-color: rgb(179, 91, 19);
+}
+
+.BottomCompany a{
+    position: relative;
+    top: 5px;
+}
+
+.ServiceStartPart{
+    position: relative;
+    background-color: #303030;
+    width: 1300px;
+    height: 540px;
+}
+
+.Service{
+    position: relative;
+    top: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+.Service h3{
+    color: white;
+}
+
+/*ForEach de imagens de serviços*/
+.Services{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+    align-items: center;
+    text-align: center;
+}
+.Services li{
+    flex: 0 1 30rem;
+    /* I don't know why, but it's working*/
+    align-items: center;
+    margin: 1rem;
+    margin-bottom: 0;
+    height: 18rem;
+    border-top: 0.2rem;
+}
+
+.ServiceTitle{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.ServiceRes{
+    font-size: 13px;
+    font-weight: 500;
+    color: lightgrey;
+}
+
+.ServiceImgMod{
+    position: relative;
+    left: 80px;
+    background-color: rgb(179, 91, 19);
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.ServiceImg{
+    position: relative;
+    left: 25px;
+    top: 20px;
+    height: 100px;
+    width: 100px;
+}
+
+.BottomService{
+    margin: 17px;
+    margin-top: 80px;
+    border-radius: 5px;
+    position: relative;
+    left: 535px;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(223, 114, 24);
+    height: 40px;
+    width: 230px;
+}
+.BottomService:hover{
+    background-color: rgb(179, 91, 19);
+}
+.BottomService a{
+    position: relative;
+    top: 5px;
+}
+
+/*Clients*/
+.Clients{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin-top: 5px;
+    align-items: center;
+}
+.Clients li{
+    flex: 0 1 15rem;
+    /* I don't know why, but it's working*/
+    align-items: center;
+    
+    margin-bottom: 0;
+    height: 8rem;
+    border-top: 0.2rem;
+}
+
+.ClientImgMod{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.ClientImg{
+    position: relative;
+    left: 50px;
+    top: 5px;
+    height: 50px;
+    width: 50px;
+}
+
+
+
+
+
+
