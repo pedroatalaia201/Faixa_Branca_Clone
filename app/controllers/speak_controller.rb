@@ -1,5 +1,6 @@
 class SpeakController < ApplicationController
     def index
+        @client = Client.all
         @speak = Speak.all
         @speak = Speak.new
     end

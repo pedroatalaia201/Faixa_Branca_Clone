@@ -1,17 +1,92 @@
 // Place all the styles related to the speak controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.ContactUs{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.Form_TextInput{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
 .Field{
+    margin: 15px;
     position: relative;
     width: 200px;
 }
 
-.form__input{
-    background-color: lightgray;
-    width: 300px;
-    border: none;
+.SubjectField{
+    position: relative;
+    bottom: 177px;
+    left: 650px;
 }
 
-.form_bottom{
-    background-color:  rgb(223, 114, 24) !important;
+.NumberField{
+    position: relative;
+    bottom: 177px;
+    left: 650px;
+}
+
+.form_label{
+    font-size: 12px;
+    color: lightgray;
+}
+
+.form__input{
+    background-color: lightgray;
+    height: 50px;
+    width: 600px;
+    border: none;
+    border-radius: 5px;
+}
+
+.MessageField{
+    position: relative;
+    bottom: 170px;
+}
+
+.form_textarea{
+    background-color: lightgray;
+    height: 130px;
+    width: 1255px;
+    border: none;
+    border-radius: 5px;
+}
+
+.submit_bottom{
+    position: relative;
+    left: 1170px;
+    bottom: 150px;
+
+    width: 100px;
+    height: 50px;
+    background-color: rgb(223, 114, 24);    
+    border: none;
+    border-radius: 5px;
+}
+
+.ClientStartSpeak{
+    position: relative;
+    top: -130px;
+
+    margin-bottom: 0px;
+}
+.ClientsSpeak{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin-top: 5px;
+    align-items: center;
+}
+.ClientsSpeak li{
+    flex: 0 1 15rem;
+    /* I don't know why, but it's working*/
+    align-items: center;
+    
+    margin-bottom: 0;
+    height: 3rem;
 }
