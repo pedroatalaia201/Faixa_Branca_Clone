@@ -1,31 +1,45 @@
-<%= form_for new_speak_url do |msg| %>
+<div class = "Form_TextInput">
+    <%= form_for @speak, url: speak_index_path, html: { class: "form" } do |msg| %>
 
-    <div class = "Field">
-        <%= msg.label :name %>
-        <%= msg.text_field :name, class: "form__input", required: true, placeholder: 'Como podemos lhe chamar?' %>
-    </div>
+        <div class = "Field">
+            <div class = "NameField">
+                <%= msg.label :name,"SEU NOME", class: "form_label" %>
+                <%= msg.text_field :name, class: "form__input", required: true, placeholder: 'Como podemos lhe chamar?' %>
+            </div>
+        </div>
 
-    <div class = "Field">
-        <%= msg.label :email %>
-        <%= msg.text_field :email %>
-    </div>
+        <div class = "Field">
+            <div class = "EmailField">
+                <%= msg.label :email, "SEU E-MAIL", class: "form_label" %>
+                <%= msg.text_field :email, class: "form__input", placeholder: "Qual o seu e-mail principal?" %>
+            </div>
+        </div>
+        
+        <div class = "Field">
+            <div class = "SubjectField">
+                <%= msg.label :subject, "ASSUNTO", class: "form_label" %>
+                <%= msg.text_field :subject, class: "form__input", placeholder: "Orçamento, elogio, crítica" %>
+            </div>
+        </div>
 
-    <div class = "Field">
-        <%= msg.label :message %>
-        <%= msg.text_field :message %>
-    </div>
+        <div class = "Field">
+            <div class = "NumberField">
+                <%= msg.label :number, "SEU TELEFONE", class: "form_label" %>
+                <%= msg.text_field :number, class: "form__input", placeholder: "Tem um telefone para contato?" %>
+            </div>
+        </div>
 
-    <div class = "Field">
-        <%= msg.label :subject %>
-        <%= msg.text_field :subject %>
-    </div>
+        <div class = "Field">
+            <div class = "MessageField">
+                <%= msg.label :message, "MENSAGEM", class: "form_label" %>
+                <%= msg.text_area :message, class: "form_textarea", placeholder: "Descreva o que deseja" %>
+            </div>
+        </div>
 
-    <div class = "Field">
-        <%= msg.label :number %>
-        <%= msg.text_field :number %>
-    </div>
-
-    <div class = "Actions">
-        <%= msg.submit %>
-    </div>
-<% end %>
+        <div class = "Actions">
+            <div calss = "form_bottom">
+                <%= msg.submit 'Enviar', :class => 'submit_bottom' %>
+            </div>
+        </div>
+    <% end %>
+</div>

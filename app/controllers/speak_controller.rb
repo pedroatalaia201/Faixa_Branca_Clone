@@ -25,6 +25,6 @@ class SpeakController < ApplicationController
 
     private
    def speak_params
-       params.require(:speak).permit(:name, :email, :message, :subject)
+       params.require(:speak).permit(:name, :email, :message, :subject, :number)
     end
 end

@@ -1,3 +1,3 @@
 class Speak < ApplicationRecord
-    validates :name, :email, :message, presence: true
+    validates :name, :email, :message, :number, presence: true
 end
